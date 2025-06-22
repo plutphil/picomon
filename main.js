@@ -30,6 +30,11 @@ function updatecounts() {
     netcountspan.textContent = "" + netcount;
     fruitcountspan = document.getElementById("fruitcount");
     fruitcountspan.textContent = "" + fruitcount;
+    
+    netcountspan = document.getElementById("netcount");
+    netcountspan.textContent = "" + netcount;
+    fruitcountspan = document.getElementById("fruitcountinv");
+    fruitcountspan.textContent = "" + fruitcount;
 }
 function docatch() {
     if (netcount <= 0) {
@@ -52,13 +57,15 @@ function docatch() {
     if (1 - t * t + Math.random() > 1.5) {
         setTimeout(e => {
             document.getElementById("catchstatus").textContent = "success!";
-            tocatch.splice(tocatch.indexOf(currentcreature), 1);
-            c = generateIndividual(pickRandom(allcreatures));
+            c = tocatch.splice(tocatch.indexOf(currentcreature), 1);
+            console.log("catching", c);
+            c = generateIndividual(c[0]);
             catchedcreatures.push(c)
             setTimeout(e => {
                 btncatch.disabled = false;
                 backbtncatch.disabled = false;
-                showscreen("creatureinfo")
+                fillCreatureInfo(c);
+                showscreen("creatureinfo");
                 document.getElementById("creatureinfo").querySelector(".backbutton").onclick = e => {
                     creaturescreen();
                 }
