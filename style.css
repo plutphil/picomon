@@ -1,0 +1,135 @@
+#creatureinfo, #catchedcreatures, #creatures {
+    max-width: 600px;
+    margin: auto;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.backbutton {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+
+td:first-child {
+    font-weight: bold;
+    width: 40%;
+    color: #555;
+}
+
+img#creatureinfoimg {
+    max-width: 100px;
+    height: auto;
+    
+}
+
+.trait {
+    display: inline-block;
+    background: #e0e0e0;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    margin: 0.1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments for smaller screens
+@media (max-width: 600px) {
+
+    table,
+    tr,
+    td {
+        display: block;
+        width: 100%;
+    }
+
+    td:first-child {
+        width: 100%;
+        font-weight: bold;
+        margin-top: 0.5rem;
+    }
+
+    td {
+        padding: 0.25rem 0;
+    }
+
+    .trait {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .backbutton {
+        width: 100%;
+    }
+} */
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    background-image: linear-gradient(30deg, rgb(71, 255, 148) 0%, rgb(0, 132, 255) 100%); 
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.screen {
+    text-align: center;
+}
+
+button {
+    border: solid 2px;
+    border-radius: 10pt;
+    font-size: 20pt;
+    padding: 10pt;
+    min-width: 200pt;
+    margin-bottom: 10pt;
+}
+
+.creature {
+    border: solid 2px;
+    border-radius: 10pt;
+    font-size: 20pt;
+    padding: 10pt;
+    min-width: 200pt;
+    margin-bottom: 10pt;
+    text-align: left;
+    display: flex;
+}
+
+#tocatch {
+    width: 100pt;
+    height: 100pt;
+}
+
+td {
+    background-image: linear-gradient(228deg, #B1FFAEFF 0%, rgb(154, 214, 255) 100%);
+    border-radius: 10pt;
+    margin: 2px;
+    padding: 0;
+    margin: 1px;
+    vertical-align: center;
+    word-break: break-word;
+}
+
+.backbutton {
+    background-image: linear-gradient(228deg, #B1FFAEFF 0%, #22A5FFFF 100%);
+    border: solid 0px;
+    border-radius: 10pt;
+    font-size: 20pt;
+    padding: 3pt;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+
+    min-width: 100pt;
+    margin-bottom: 10pt;
+}
+
+.trait {
+    border-radius: 10pt;
+    padding: 7pt;
+    color: white;
+    -webkit-text-stroke: 1pt black;
+    font-weight: bold;
+    margin-left: 5pt;
+}

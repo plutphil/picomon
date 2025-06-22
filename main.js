@@ -101,10 +101,10 @@ fillCreatureInfo(c);
 function fillCreatureInfo(c) {
     document.getElementById("creatureinfoimg").src = c.type.img;
     document.getElementById("creatureinfoname").textContent = c.name;
-    document.getElementById("creatureinfonweight").textContent = c.weight.toFixed(2);
-    document.getElementById("creatureinfonheight").textContent = c.height.toFixed(2);
-    document.getElementById("creatureinfonwidth").textContent = c.width.toFixed(2);
-    document.getElementById("creatureinfostrength").textContent = c.strength.toFixed(2);
+    document.getElementById("creatureinfonweight").textContent = c.weight.toFixed(1);
+    document.getElementById("creatureinfonheight").textContent = c.height.toFixed(1);
+    document.getElementById("creatureinfonwidth").textContent = c.width.toFixed(1);
+    document.getElementById("creatureinfostrength").textContent = c.strength.toFixed(1);
     document.getElementById("creatureinfotimecatched").textContent = c.timecatched;
     creatureinfontraits = document.getElementById("creatureinfontraits")
     creatureinfontraits.innerHTML = "";
